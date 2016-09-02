@@ -28,28 +28,28 @@ class NewStand::CLI
       input = gets.strip
       case input
       when "1"
-        puts <<-DOC
+        puts <<-DOC.gsub(/^\s*/,'')
           1. Associated Press
           2. Washington Post
           3. CNN
           4. FOX
         DOC
       when "2"
-        puts <<-DOC
+        puts <<-DOC.gsub(/^\s*/,'')
           1. Reuters
           2. The Guardian
           3. BBC
           4. PBS
         DOC
       when "3"
-        puts <<-DOC
+        puts <<-DOC.gsub(/^\s*/,'')
           1. Buzzfeed
           2. Deadspin
           3. TMZ
           4. E
         DOC
       when "4"
-        puts <<-DOC
+        puts <<-DOC.gsub(/^\s*/,'')
           1. ESPN
           2. Bleacher Report
           3. BBC Sports
@@ -70,28 +70,28 @@ class NewStand::CLI
       input = gets.strip
       case input
       when "1"
-        puts <<-DOC
+        puts <<-DOC.gsub(/^\s*/,'')
           1. Associated Press
           2. Washington Post
           3. CNN
           4. FOX
         DOC
       when "2"
-        puts <<-DOC
+        puts <<-DOC.gsub(/^\s*/,'')
           1. Reuters
           2. The Guardian
           3. BBC
           4. PBS
         DOC
       when "3"
-        puts <<-DOC
+        puts <<-DOC.gsub(/^\s*/,'')
           1. Buzzfeed
           2. Deadspin
           3. TMZ
           4. E
         DOC
       when "4"
-        puts <<-DOC
+        puts <<-DOC.gsub(/^\s*/,'')
           1. ESPN
           2. Bleacher Report
           3. BBC Sports
@@ -104,7 +104,7 @@ class NewStand::CLI
       end
     end
   end
-  
+
   def goodbye
     puts "See You Tomorrow!"
   end
