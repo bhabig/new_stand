@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require './lib/new_stand'
+
+
+NewStand::CLI.new.call
