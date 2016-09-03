@@ -2,5 +2,4 @@
 
 require './lib/new_stand'
 
-
-NewStand::CLI.new.call
+CLI.new.call
