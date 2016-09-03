@@ -17,16 +17,14 @@ class NewStand::CLI
       3. Pop Culture
       4. Sports
     DOC
-
-    @category
   end
 
   def list_sites
-    input = nil
-    while input != "exit"
+    @site_input = nil
+    while @site_input != "exit"
       puts "\nEnter The Number For The Article You'd Like To Read, Enter 'back' To Return To The Full Article Listing, Or Enter 'exit' To Leave The Stand"
-      input = gets.strip
-      case input
+      @site_input = gets.strip
+      case @site_input
       when "1"
         puts <<-DOC.gsub(/^\s*/,'')
           1. Associated Press
@@ -64,11 +62,11 @@ class NewStand::CLI
   end
 
   def list_articles
-    input = nil
-    while input != "exit"
+    @article_input = nil
+    while @article_input != "exit"
       puts "\nEnter The Number For The Article You'd Like To Read, Enter 'back' To Return To The Full Article Listing, Or Enter 'exit' To Leave The Stand"
-      input = gets.strip
-      case input
+      @article_input = gets.strip
+      case @article_input
       when "1"
         puts <<-DOC.gsub(/^\s*/,'')
           1. Associated Press
@@ -107,5 +105,10 @@ class NewStand::CLI
 
   def goodbye
     puts "See You Tomorrow!"
+  end
+
+  def article_selector
+    if @site_input == "1"
+    end
   end
 end
