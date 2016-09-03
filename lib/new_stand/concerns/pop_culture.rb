@@ -1,4 +1,4 @@
-class PopCulture
+module PopCulture
 
 def pop_culture_buzz
 	puts <<-DOC

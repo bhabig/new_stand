@@ -1,4 +1,4 @@
-class National
+module National
 
 def national_associated_press
 	puts <<-DOC

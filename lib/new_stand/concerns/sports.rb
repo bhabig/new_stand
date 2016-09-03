@@ -1,4 +1,4 @@
-class Sports
+module Sports
 
 def sports_espn
 	puts <<-DOC

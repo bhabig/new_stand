@@ -1,4 +1,4 @@
-class International
+module International
 
 def international_reuters
 	puts <<-DOC
